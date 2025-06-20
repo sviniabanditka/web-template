@@ -11,7 +11,7 @@ A modern full-stack boilerplate with **Laravel 11**, **Vue 3**, **Docker**, and 
 | **Database**       | PostgreSQL 15 with JSONB                    |
 | **Cache**          | Redis (queues, pub/sub)                     |
 | **Web Server**     | Nginx                                       |
-| **Infrastructure** | Docker, Makefile, Monorepo                  |
+| **Infrastructure** | Docker, Makefile                            |
 
 ## 📁 Project Structure
 
@@ -74,14 +74,6 @@ Access the app:
 | `make queue`   | Start queue worker             |
 | `make test`    | Test WebSocket event broadcast |
 
-## 🔌 WebSocket Events
-
-Using **Laravel Reverb** for real-time updates:
-
-* Clients connect to a dedicated WebSocket server
-* Events are broadcast via Redis pub/sub
-* Uses private channels for user-specific messages
-
 ## 🌐 API Endpoints
 
 | Method | Endpoint    | Description  |
@@ -92,8 +84,8 @@ Using **Laravel Reverb** for real-time updates:
 
 | Service    | Description                              | Port |
 | ---------- | ---------------------------------------- | ---- |
-| `frontend` | Vue + Vite development server            | 8000 |
-| `backend`  | Laravel 11 app + Reverb WebSocket server | N/A  |
+| `frontend` | Vue + Vite                               | N/A  |
+| `backend`  | Laravel 11 + Reverb WebSocket            | N/A  |
 | `postgres` | PostgreSQL 15 with JSONB support         | 5432 |
 | `redis`    | Redis for queues and pub/sub             | 6379 |
 | `nginx`    | Reverse proxy for frontend/backend       | 8000 |
