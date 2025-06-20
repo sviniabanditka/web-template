@@ -2,8 +2,6 @@
 
 A modern full-stack boilerplate with **Laravel 11**, **Vue 3**, **Docker**, and **WebSockets** — everything preconfigured to get you started fast.
 
----
-
 ## 🏗️ Tech Stack
 
 | Layer              | Technology                                  |
@@ -14,8 +12,6 @@ A modern full-stack boilerplate with **Laravel 11**, **Vue 3**, **Docker**, and 
 | **Cache**          | Redis (queues, pub/sub)                     |
 | **Web Server**     | Nginx                                       |
 | **Infrastructure** | Docker, Makefile, Monorepo                  |
-
----
 
 ## 📁 Project Structure
 
@@ -31,8 +27,6 @@ A modern full-stack boilerplate with **Laravel 11**, **Vue 3**, **Docker**, and 
 ├── Makefile                 # Dev commands
 └── README.md
 ```
-
----
 
 ## 🚀 Getting Started
 
@@ -58,8 +52,6 @@ Access the app:
 * Frontend: [http://localhost:8000](http://localhost:8000)
 * API Ping: [http://localhost:8000/api/ping](http://localhost:8000/api/ping)
 
----
-
 ## 🛠️ Make Commands
 
 ### Development
@@ -82,8 +74,6 @@ Access the app:
 | `make queue`   | Start queue worker             |
 | `make test`    | Test WebSocket event broadcast |
 
----
-
 ## 🔌 WebSocket Events
 
 Using **Laravel Reverb** for real-time updates:
@@ -92,15 +82,11 @@ Using **Laravel Reverb** for real-time updates:
 * Events are broadcast via Redis pub/sub
 * Uses private channels for user-specific messages
 
----
-
 ## 🌐 API Endpoints
 
 | Method | Endpoint    | Description  |
 | ------ | ----------- | ------------ |
 | GET    | `/api/ping` | Health check |
-
----
 
 ## 🐳 Docker Services
 
@@ -111,8 +97,6 @@ Using **Laravel Reverb** for real-time updates:
 | `postgres` | PostgreSQL 15 with JSONB support         | 5432 |
 | `redis`    | Redis for queues and pub/sub             | 6379 |
 | `nginx`    | Reverse proxy for frontend/backend       | 8000 |
-
----
 
 ## ❗ Troubleshooting
 
@@ -131,8 +115,6 @@ Using **Laravel Reverb** for real-time updates:
 * Is the Reverb server running? → `make reverb`
 * Check Redis status: `docker compose -f infra/docker-compose.yml logs redis`
 
----
-
 ## 🤝 Contributing
 
 1. Fork this repo
@@ -140,8 +122,6 @@ Using **Laravel Reverb** for real-time updates:
 3. Make your changes
 4. Test via `make dev`
 5. Open a pull request 🚀
-
----
 
 ## 📄 License
 
